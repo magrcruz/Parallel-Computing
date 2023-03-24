@@ -1,15 +1,14 @@
 #!/bin/bash
 
-for (( i=6; i<=42; i+=6 ))
+for (( i=100; i<=100*10; i+=100 ))
 do
    # Ejecuta el programa con los parametros definidos
-   ./matrixC.exe $i
+   ./matrixC.exe $i >> tiemposC.txt
 
 done
-for (( i=6; i<=42; i+=6 ))
+for (( i=100; i<=100*10; i+=100 ))
 do
    # Ejecuta el programa con los parametros definidos
-   ./matrixB.exe $i
+   ./matrixB.exe $i >> tiemposB.txt
 
 done
-
